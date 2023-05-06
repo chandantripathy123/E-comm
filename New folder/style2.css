@@ -1,0 +1,32 @@
+.widow{
+    background-color: hotpink;
+    text-align: left;
+    color: black;
+    background-position: right-top;
+  
+
+}
+.riht{
+     
+   
+    color:white;
+    text-align: center;
+    
+
+}
+.window{
+
+    width: 500px;
+        height: 500px;
+        background-color: yellow;
+       text-align: left;
+        padding-bottom:30px;
+}
+.right{
+
+    width: 500px;
+        height: 500px;
+        background-color: rgb(14, 188, 72);
+       text-align: right;
+        padding-bottom:30px;
+}
