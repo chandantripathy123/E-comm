@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(168, 160, 160);
+}
+
+
+
+
+.container2{                                                                              /*main container*/
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr ;
+    /* grid-template-rows: auto auto auto auto auto auto; */
+    /* grid-template-rows: 0.5fr 1fr 50fr 2fr 1.5fr 1.5fr   ; */
+    /* grid-template-rows: 60px 140px 120px 360px 380px ; */
+    gap: 6px;
+    grid-template-areas:
+    'navbar navbar navbar navbar'
+    'side1 search search side2'
+    'side1 post post side2'
+    'side1 post post side2'
+    'side1 post2 post2 side2' 
+    'side1 post2 post2 side2'
+    
+    ;
+     
+  }
+  .navbar2{
+
+      grid-area: navbar;
+   
+   border-radius: 5px;
+  
+
+  }
+  .search{
+      
+    grid-area: search;
+    background-color: white;
+
+    
+    
+
+  }
+  
+  .side1{
+       
+    
+     grid-area: side1;
+  
+   border-radius: 5px;
+   
+  }
+  .post{
+     grid-area: post;
+   background-color: white;
+   border-radius: 5px;
+   padding-top: 5px;
+  }
+
+  .post2{
+     grid-area: post2;
+   background-color:white;
+   border-radius: 5px;
+   padding-top: 5px;
+  }
+  .side2{
+     grid-area: side2;
+   border-radius: 5px;
+   text-transform: capitalize;
+   
+  }
+
+                                             /* nav start */
+.main{
+    display: flex;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+   width: 75%;
+   
+}
+.logo{
+    
+    margin: auto auto auto 200px;
+    height: 30px;
+    width: 30px;
+}
+
+
+/* input{
+    
+    height: 20px;
+    width: 150px;
+    background-color: rgba(16, 55, 212, 0.3);
+} */
+.pro{
+   
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(35, 35, 35,0.0);
+    border-radius: 50%;
+    
+    
+}
+.premium{
+    text-transform: capitalize;
+    
+   padding-left:10px;
+    border-left: 1px solid gray;
+    width: 210px;
+    text-align: center;
+    
+}
+.premium span{
+    padding-left: 9px;
+}
+.noto{
+   display: flex;
+   justify-content: space-around;
+   text-transform: capitalize;
+   text-align: center;
+   margin-top: 5px;
+   
+   
+   
+    
+}
+.noto a{
+    text-decoration: none;
+    color: gray;
+
+}
+                                                                                   /* nav end */
+
+
+
+                                                                            /* left side profilr  start*/
+
+
+.card{
+                                                                            /* profile container */
+    float: right; 
+    width: 280px;
+   
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+   
+    position: relative;
+}
+   /* profile pic */
+.card::before{
+
+    content: "";
+    background-image: url(./Profile\ image.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 85px;
+
+}
+.text{
+    padding-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: white;
+    
+}
+.connection {
+    margin: 5px auto;
+     background-color: white;
+     text-transform: capitalize;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ .con:first-child{
+    padding-left: 5px;
+
+ }
+ .ryt{
+     color: blue;
+     font-style: oblique;
+     
+     
+     padding: 0px 5px 0px 0px;
+ }
+ .item{
+    margin-top: 0px;
+   
+    background-color: white;
+   
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 10px;
+
+}
+.item >p,h3{
+    padding-left: 8px;
+}
+.item span{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 8px;
+    
+   
+}
+.recent{
+    text-transform: capitalize;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+
+}
+
+ .recent p{
+    padding-left: 10px;
+    margin-top: 10px;
+ }
+                                                                                         /* search box start */
+
+   .search{
+    display:inline;
+    padding: 20px;
+    position: relative;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+   }
+   
+   .search img{
+      
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+   }
+   .search input{
+    margin-left: 75px;
+    height: 45px;
+    width: 520px;
+    border-radius: 25px;
+    border-color: black;
+    padding: 10px;
+    font-weight: bold;
+   }
+   .search::after{
+    content: "";
+    background-image: url(./Profile\ image.png);
+    background-size: cover;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+
+   }
+   .search div{
+    
+    padding-top: 8px;
+          align-items: center;
+        display: flex;
+        
+        justify-content: space-around;
+        text-transform: capitalize;
+
+
+   }
+   .search div>span{
+    padding-left: 8px;
+   }
+   
+                                                                                         /* search bar comlete */
+
+   .follow {
+    display: flex;
+    justify-content:space-between;
+    text-transform: capitalize;
+   }
+   .follow>img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+   }
+   .follow>div{
+    margin: 8px;
+
+    display: flex;
+    justify-content: space-around;
+   }
+   .follow>div img{
+    height: 60px;
+    width: 60px;
+    
+   }
+   .follow>div>div{
+      
+    padding-left: 8px;
+   }
+   .follow .followers{
+     
+    font-weight: bold;
+    font-size: 20px;
+
+   }
+   .post>img{
+    height: 70%;
+    width: 100%;
+    
+    
+   }
+   .post>img:hover{
+    box-shadow: 5px 4px 8px 6px black;
+     padding: 8px;
+     cursor: zoom-out;
+    
+     
+
+   }
+   .post .like{
+    padding-left:10px ;
+   padding-bottom: 6px;
+   
+   
+   }
+  .like2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    text-transform: capitalize;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .speace{
+    text-align: center;
+    align-items: center;
+    word-spacing: 5px;
+  }
+  .speace:hover{
+    box-shadow: 0px 0px 5px 5px lightseagreen ;
+    
+    border-radius: 15%;
+    cursor: pointer;
+   
+    padding: 3px;
+  }
+  .post2 .demo2{
+      
+    display: flex;
+    justify-content: space-between;
+    
+
+  }
+   .demo>div{
+    display: flex;
+   }
+ .demo2 img{
+     
+  height: 50px;
+  width: 60px;
+  
+  cursor: pointer;
+ }
+                                                                           /* second post */
+
+    .yash{
+      text-align: justify;
+      margin: 5px 10px auto 10px;
+    }
+    .riit{
+     display: flex;
+      justify-content: space-between;     
+      
+    }
+    .riit>img{
+      padding-right: 5px;
+    }
+    .let{
+
+                                                                                 /* NewS RIGHT SIDE */
+
+float: left; 
+width: 280px;
+padding-top: 5px;
+
+
+}
+.col{
+  background-color: white;
+  text-transform: none;
+border: 1px solid white;
+border-radius: 5px;
+}
+ .col2{
+  margin-top: 5px;
+  background-color: white;
+  text-transform: none;
+border: 1px solid white;
+border-radius: 5px;
+}
+.col3{
+  margin-top: 5px;
+  background-color: white;
+  text-transform: none;
+border: 1px solid white;
+border-radius: 5px;
+}
+ .col3 h5{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    width: 180px;
+    height: 25px;
+    padding-top: 4px;
+    margin-top: 4px;
+ }
+ .news{
+  background-color: white;
+ }
+ 
+ .let ul{
+  width: 250px;
+  word-wrap: break-word;
+  padding-top: 15px;
+  padding-left: 30px;
+  
+  list-style:  disc;
+   
+ }
+ .let ul li{
+  
+padding-top: 5px;
+    font-weight: bold;
+    
+ }
+ .page h5{
+
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  width: 90px;
+  height: 25px;
+  padding-top: 4px;
+  margin-top: 4px;
+  
+ }
+ #spc>img{
+     height: 40px;
+     width: 40px;
+
+ }
+ #lik>img{
+  height: 40px;
+  width: 40px;
+ }
+ #uni>img{
+  height: 40px;
+  width: 40px;
+ }
+   
+  
